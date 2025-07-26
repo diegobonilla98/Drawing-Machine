@@ -2,6 +2,8 @@
 
 This repository contains the complete software and Arduino firmware for a custom DIY pen plotter. The hardware is based on the 3D-printed design from [Thingiverse: Pen Plotter by KikiTay](https://www.thingiverse.com/thing:4645955), with custom modifications and iterations. The project uses stepper motors controlled via an Arduino, and Python scripts handle everything from manual control to image-to-G-code conversion and sending commands to the plotter.
 
+![](./gif.gif)
+
 The system interprets a subset of G-code commands (with coordinates in motor steps, not mm) to move the X, Y, and Z axes. Images are processed into skeletonized lines, converted to optimized G-code paths, visualized, and sent over serial.
 
 ## Features
@@ -126,6 +128,7 @@ Pull requests welcome! For major changes, open an issue first.
 
 ## License
 MIT License.
+
 ---
 
 Built with ❤️ by Diego Bonilla. Inspired by open-source plotter designs.
