@@ -1,0 +1,22 @@
+plotter_calibration:
+  axes:
+    X:
+      steps_to_mm:
+        slope: 0.0116787095     # mm per step
+        intercept: 0.1684669    # mm at zero steps
+      mm_to_steps:
+        slope: 85.62399421      # steps per mm (= 1 / slope)
+        intercept: -14.4250945  # steps at 0 mm (= -intercept/slope)
+      physical_limit_mm: 156.0
+    Y:
+      steps_to_mm:
+        slope: -0.0118666324    # mm per step (note negative direction)
+        intercept: -2.8196631   # mm at zero steps
+      mm_to_steps:
+        slope: -84.28887745     # steps per mm (= 1 / slope)
+        intercept: -237.710385  # steps at 0 mm (= -intercept/slope)
+      physical_limit_mm: 156.0
+  note: |
+    All parameters derived from 2025-07-24 calibration. 
+    Y step direction is negative for positive physical travel.
+    Make sure to home axes and zero step counters before using this calibration.
